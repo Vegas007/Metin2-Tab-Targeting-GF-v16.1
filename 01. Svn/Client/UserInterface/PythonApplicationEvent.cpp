@@ -3,7 +3,6 @@
 //1.1 Add after:
 #if defined(ENABLE_TAB_NEXT_TARGET)
 	#include "PythonCharacterManager.h"
-	#include "PythonNetworkStream.h"
 	#include "PythonPlayer.h"
 	#include "InstanceBase.h"
 #endif
