@@ -25,7 +25,7 @@ CInstanceBase * CPythonCharacterManager::GetTabNextTargetPointer(CInstanceBase *
 	if (!pkInstMain)
 	{
 		ResetTabNextTargetVectorIndex();
-		return NULL;
+		return nullptr;
 	}
 	
 	struct FCharacterManagerInstanceTarget
@@ -54,7 +54,7 @@ CInstanceBase * CPythonCharacterManager::GetTabNextTargetPointer(CInstanceBase *
 	if (kTargetCount == 0)
 	{
 		ResetTabNextTargetVectorIndex();
-		return NULL;
+		return nullptr;
 	}
 
 	if (GetTabNextTargetVectorIndex() >= kTargetCount - 1)
