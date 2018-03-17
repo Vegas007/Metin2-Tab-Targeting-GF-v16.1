@@ -33,7 +33,7 @@ CInstanceBase * CPythonCharacterManager::GetTabNextTargetPointer(CInstanceBase *
 		CInstanceBase * pkInstMain;
 		FCharacterManagerInstanceTarget(CInstanceBase * pInstance) : pkInstMain(pInstance) {}
 
-		void operator () (const std::pair<DWORD, CInstanceBase *>& itor)
+		inline void operator () (const std::pair<DWORD, CInstanceBase *>& itor)
 		{
 			const auto pkInstTarget = itor.second;
 			if (!pkInstTarget || pkInstTarget == pkInstMain || !pkInstTarget->IsEnemy())
